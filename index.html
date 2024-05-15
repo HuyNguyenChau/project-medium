@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Tiêu đề -->
+        <title>Floko</title>
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Font-Styles -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- --------------------------------------------------Header------------------------------------------------------ -->
+        <!-- -----Header-Mobile----- -->
+        <header class="header-mobile hide-on-pc">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="toggle-menu">
+                        <input
+                            hidden
+                            type="checkbox"
+                            name=""
+                            id="toggle-menu-checkbox"
+                            class="toggle-menu-checkbox"
+                        />
+                        <label
+                            for="toggle-menu-checkbox"
+                            class="header__menu-mobile"
+                        >
+                            <svg
+                                class="menu-img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"
+                            >
+                                <path
+                                    fill="rgba(191, 191, 191, 0.6)"
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                                />
+                            </svg>
+                        </label>
+                        <label
+                            for="toggle-menu-checkbox"
+                            class="toggle-menu__inset"
+                        ></label>
+                        <div class="toggle-menu__drawer">
+                            <label
+                                for="toggle-menu-checkbox"
+                                class="toggle-menu__close"
+                            >
+                                <svg
+                                    class="toggle-menu__close-img"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 384 512"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                                    />
+                                </svg>
+                            </label>
+                            <ul class="toggle-menu__list">
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link"
+                                        >About</a
+                                    >
+                                </li>
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link"
+                                        >Schedule</a
+                                    >
+                                </li>
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link"
+                                        >Team</a
+                                    >
+                                </li>
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link"
+                                        >Contacts</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Register -->
+                    <a href="#!" class="header__register btn btn--register"
+                        >REGISTER NOW</a
+                    >
+                    <!-- Logo -->
+                    <a href="#!">
+                        <img
+                            src="./assets/icon/Logo.svg"
+                            alt=""
+                            class="header__logo-mobile"
+                    /></a>
+                </div>
+            </div>
+        </header>
+        <!-- -----Header-PC----- -->
+        <header class="header hide-on-mobile">
+            <div class="container header__container--pc">
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <a href="">
+                        <img
+                            src="./assets/icon/Logo.svg"
+                            alt=""
+                            class="header__logo"
+                    /></a>
+                    <!-- Navbar -->
+                    <navbar class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a
+                                    href=""
+                                    class="navbar__link navbar__link--active"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link">Schedule</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link">Team</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </navbar>
+                    <!-- Register -->
+                    <a href="#!" class="header__register btn btn--register"
+                        >REGISTER NOW</a
+                    >
+                </div>
+            </div>
+        </header>
+        <!-- --------------------------------------------------Main-------------------------------------------------------- -->
+        <main class="main">
+            <!-- ----------------------------------------------Hero-------------------------------------------------------- -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="row hero__row">
+                            <!-- Hero-label -->
+                            <div class="col col-xl-4 col-md-6 col-sm-12">
+                                <p class="hero__label">
+                                    OCTOBER 18-22, 2021 / REMOTE DESIGN WEEK
+                                </p>
+                            </div>
+                            <!-- Hero-title -->
+                            <div class="col col-xl-10 col-md-12">
+                                <h1 class="hero__title">
+                                    Our Design Event Is Coming Up!
+                                </h1>
+                            </div>
+                            <!-- Hero-btn-wrap -->
+                            <div class="col col-12">
+                                <div class="hero__btn-wrap">
+                                    <button type="button" class="hero__btn btn">
+                                        BOOK A SEAT
+                                    </button>
+                                    <button type="button" class="hero__btn btn">
+                                        LEARN MORE
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Hero-img -->
+                            <div class="col col-12">
+                                <div class="hero__img-wrap">
+                                    <!-- Hero-img-item-1 -->
+                                    <div
+                                        class="hero__img-item hero__img-item--1"
+                                    >
+                                        <img
+                                            src="./assets/img/avatar-1.png"
+                                            alt=""
+                                            class="hero__img"
+                                        />
+                                        <p class="hero__img-name">
+                                            ANDERSON ADAM
+                                        </p>
+                                        <p class="hero__img-job">
+                                            APP DESIGNER
+                                        </p>
+                                    </div>
+                                    <!-- Hero-img-item-2 -->
+                                    <div
+                                        class="hero__img-item hero__img-item--2"
+                                    >
+                                        <img
+                                            src="./assets/img/avatar-2.png"
+                                            alt=""
+                                            class="hero__img"
+                                        />
+                                        <p class="hero__img-name">
+                                            EDWARDS REYES
+                                        </p>
+                                        <p class="hero__img-job">
+                                            WEB DESIGNER
+                                        </p>
+                                    </div>
+                                    <!-- Hero-img-item-3 -->
+                                    <div
+                                        class="hero__img-item hero__img-item--3"
+                                    >
+                                        <img
+                                            src="./assets/img/avatar-3.png"
+                                            alt=""
+                                            class="hero__img"
+                                        />
+                                        <p class="hero__img-name">
+                                            ROGERS PARKER
+                                        </p>
+                                        <p class="hero__img-job">
+                                            PRODUCT DESIGNER
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ----------------------------------------------Events------------------------------------------------------ -->
+            <section class="events">
+                <div class="container">
+                    <div class="events__inner">
+                        <div class="row events__row">
+                            <!-- Events-content -->
+                            <div class="col col-xl-5 col-sm-12">
+                                <div class="events__content">
+                                    <h2 class="events__title">
+                                        Events You'll Remember
+                                    </h2>
+                                    <p class="events__label">
+                                        We are a turnkey event agency in New
+                                        York.
+                                    </p>
+                                    <p class="events__desc">
+                                        EventiX is a leading event management
+                                        company in the United States. We hold
+                                        the highest quality events pushing the
+                                        boundaries of the industry standards.
+                                    </p>
+                                    <p
+                                        class="events__desc events__desc--margin"
+                                    >
+                                        We are passionate about creating
+                                        integrated experiences that bring
+                                        cohesive connection between brands and
+                                        targeted audience. Our team of
+                                        experienced and talented event managers
+                                        strive to deliver stellar results.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Events-media -->
+                            <div class="col col-xl-6 offset-xl-1 col-sm-12">
+                                <div class="events__media">
+                                    <img
+                                        src="./assets/img/meeting.jpg"
+                                        alt=""
+                                        class="events__img"
+                                    />
+                                    <div class="events__img-info-wrap">
+                                        <div class="events__item">
+                                            <p class="events__number">14</p>
+                                            <p class="events__time">Days</p>
+                                        </div>
+                                        <div class="events__item">
+                                            <p class="events__number">12</p>
+                                            <p class="events__time">Hours</p>
+                                        </div>
+                                        <div class="events__item">
+                                            <p class="events__number">29</p>
+                                            <p class="events__time">Minites</p>
+                                        </div>
+                                        <div class="events__item">
+                                            <p class="events__number">59</p>
+                                            <p class="events__time">Seconds</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ----------------------------------------------Introducing------------------------------------------------- -->
+            <section class="introducing">
+                <div class="container">
+                    <div class="introducing__inner">
+                        <!-- Introducing-title -->
+                        <div class="row">
+                            <div class="col col-xl-7 col-sm-12">
+                                <h2 class="introducing__title">
+                                    Meet the talented Speakers
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- Introducing-desc -->
+                        <div class="row">
+                            <div class="col col-xl-6 col-sm-12">
+                                <p class="introducing__desc">
+                                    The convention is the main event of the year
+                                    for professionals in the world of design and
+                                    architecture.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Introducing-image -->
+                        <div class="row introducing__row">
+                            <div class="col col-xl-4 col-sm-12">
+                                <div class="introducing__item">
+                                    <img
+                                        src="./assets/img/intro_avatar-1.jpg"
+                                        alt=""
+                                        class="introducing__img"
+                                    />
+                                    <p class="introducing__name">Duke Stump</p>
+                                    <p class="introducing__job">
+                                        Game-Changing CMO & Founder, Nonfire
+                                        with Soul
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col col-xl-4 col-sm-12">
+                                <div class="introducing__item">
+                                    <img
+                                        src="./assets/img/intro_avatar-2.jpg"
+                                        alt=""
+                                        class="introducing__img introducing__img--active"
+                                    />
+                                    <p class="introducing__name">
+                                        Jelani Memory
+                                    </p>
+                                    <p class="introducing__job">
+                                        Global Authority on Privacy & Security.
+                                        Founder, Global Privacy by Design.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col col-xl-4 col-sm-12">
+                                <div class="introducing__item">
+                                    <img
+                                        src="./assets/img/intro_avatar-3.jpg"
+                                        alt=""
+                                        class="introducing__img"
+                                    />
+                                    <p class="introducing__name">
+                                        Christa Couture
+                                    </p>
+                                    <p class="introducing__job">
+                                        Advocate, Builder, Changemaker, Youngest
+                                        Developer in the USA.
+                                    </p>
+                                </div>
+                            </div>
+                            <svg
+                                width="9"
+                                height="16"
+                                viewBox="0 0 9 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="introducing__arrow"
+                            >
+                                <path
+                                    d="M7.5 14.25L1.25 8L7.5 1.75"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+
+                            <svg
+                                width="9"
+                                height="16"
+                                viewBox="0 0 9 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="introducing__arrow introducing__arrow--right"
+                            >
+                                <path
+                                    d="M1.5 14.25L7.75 8L1.5 1.75"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ----------------------------------------------Schedule---------------------------------------------------- -->
+            <section class="schedule">
+                <div class="container">
+                    <div class="schedule__inner">
+                        <div class="row">
+                            <div class="col col-xl-4">
+                                <h2 class="schedule__title">Schedule</h2>
+                                <p class="schedule__desc">
+                                    A representation of the event planning of
+                                    the Design Conference
+                                </p>
+                                <button class="btn shedule__btn">
+                                    Download Schedule
+                                </button>
+                            </div>
+                            <div class="col col-xl-7 offset-xl-1">
+                                <!-- Schedule__row-top -->
+                                <div class="schedule__row-top">
+                                    <div class="schedule__item-top">
+                                        <p
+                                            class="schedule__day schedule__day--active"
+                                        >
+                                            Day One
+                                        </p>
+                                        <p
+                                            class="schedule__dmy schedule__dmy--active"
+                                        >
+                                            <b
+                                                class="schedule__bold schedule__bold--active"
+                                                >05</b
+                                            >
+                                            April, Tusday
+                                        </p>
+                                    </div>
+                                    <div class="schedule__item-top">
+                                        <p class="schedule__day">Day Second</p>
+                                        <p class="schedule__dmy">
+                                            <b class="schedule__bold">05</b>
+                                            April, Tusday
+                                        </p>
+                                    </div>
+                                    <div class="schedule__item-top">
+                                        <p class="schedule__day">Day Third</p>
+                                        <p class="schedule__dmy">
+                                            <b class="schedule__bold">05</b>
+                                            April, Tusday
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Schedule__row-bottom -->
+                                <div class="schedule__row-bottom">
+                                    <time datetime="" class="schedule__time"
+                                        >8:00 AM - 9:00 AM</time
+                                    >
+                                    <div class="schedule__desc-wrap">
+                                        <p class="schedule__item-title">
+                                            Registration & Coffee
+                                        </p>
+                                        <p class="schedule__item-desc">
+                                            Register your personal data in
+                                            customer service and take coffee
+                                            before entering the room
+                                        </p>
+                                    </div>
+
+                                    <time datetime="" class="schedule__time"
+                                        >8:00 AM - 9:00 AM</time
+                                    >
+                                    <div class="schedule__desc-wrap">
+                                        <p class="schedule__item-title">
+                                            Plan & Conduct User Research
+                                        </p>
+                                        <p class="schedule__item-desc">
+                                            Many early researchers are
+                                            challanged by aspect of the design
+                                            and implementation of research
+                                            studies as well the efective
+                                            dissemunation.
+                                        </p>
+                                    </div>
+
+                                    <time datetime="" class="schedule__time"
+                                        >8:00 AM - 9:00 AM</time
+                                    >
+                                    <div class="schedule__desc-wrap">
+                                        <p class="schedule__item-title">
+                                            Q&A For Speaker
+                                        </p>
+                                        <p class="schedule__item-desc">
+                                            Register your personal data in
+                                            customer service and take food
+                                            before entering the room
+                                        </p>
+                                    </div>
+
+                                    <time datetime="" class="schedule__time"
+                                        >8:00 AM - 9:00 AM</time
+                                    >
+                                    <div class="schedule__desc-wrap">
+                                        <p class="schedule__item-title">
+                                            Launch Break
+                                        </p>
+                                    </div>
+
+                                    <time datetime="" class="schedule__time"
+                                        >8:00 AM - 9:00 AM</time
+                                    >
+                                    <div class="schedule__desc-wrap">
+                                        <p class="schedule__item-title">
+                                            Research For The Right Thing
+                                        </p>
+                                        <p class="schedule__item-desc">
+                                            Research encompasses a cariety of
+                                            investigative methods used to add
+                                            context and insight to the design
+                                            process
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ----------------------------------------------Pricing----------------------------------------------------- -->
+            <section class="pricing">
+                <div class="container">
+                    <div class="pricing__inner">
+                        <h2 class="pricing__title">Pricing Tickets</h2>
+                        <div class="row">
+                            <div class="col col-xl-4">
+                                <div class="pricing__item-top">
+                                    <p class="pricing__item-title">Standart</p>
+                                    <p class="pricing_price">
+                                        $20/mo per member
+                                    </p>
+                                </div>
+                                <div class="pricing__item-bottom">
+                                    <p class="pricing__item-desc">
+                                        One day pas access all lecture
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Lunch and snack
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Free T-Shirt
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Meet Event Speaker
+                                    </p>
+                                    <p class="pricing__item-desc">Front Seat</p>
+                                    <p class="pricing__item-desc">
+                                        Certificate
+                                    </p>
+                                    <button class="pricing__btn btn">
+                                        GET YOUR TICKET
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col col-xl-4">
+                                <div
+                                    class="pricing__item-top pricing__item-top--pink"
+                                >
+                                    <p class="pricing__item-title">Standart</p>
+                                    <p class="pricing_price">
+                                        $59/mo per member
+                                    </p>
+                                </div>
+                                <div class="pricing__item-bottom">
+                                    <p class="pricing__item-desc">
+                                        One day pas access all lecture
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Lunch and snack
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Free T-Shirt
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Front Seating
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Custom Swags
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Certificate
+                                    </p>
+                                    <button class="pricing__btn btn">
+                                        GET YOUR TICKET
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col col-xl-4">
+                                <div
+                                    class="pricing__item-top pricing__item-top--green"
+                                >
+                                    <p class="pricing__item-title">Standart</p>
+                                    <p class="pricing_price">
+                                        $99/mo per member
+                                    </p>
+                                </div>
+                                <div class="pricing__item-bottom">
+                                    <p class="pricing__item-desc">
+                                        One day pas access all lecture
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Buffet Lunch
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Free T-Shirt
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        VIP Seating
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Crumpler Backpack
+                                    </p>
+                                    <p class="pricing__item-desc">
+                                        Certificate
+                                    </p>
+                                    <button class="pricing__btn btn">
+                                        GET YOUR TICKET
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ----------------------------------------------Information------------------------------------------------- -->
+            <section class="information">
+                <div class="container">
+                    <input
+                        hidden
+                        type="checkbox"
+                        id="information-checkbox"
+                        class="information__check-box"
+                    />
+
+                    <div class="information__inner">
+                        <div class="row">
+                            <!-- Information-item-1 -->
+                            <div
+                                class="col col-xl-4 offset-xl-1 information__col--padding"
+                            >
+                                <figure class="information__img-wrap">
+                                    <img
+                                        src="./assets/img/information-img.png"
+                                        alt=""
+                                        class="information__img"
+                                    />
+                                </figure>
+                            </div>
+                            <div class="col col-xl-4">
+                                <p class="information__name">
+                                    Jonathan Kennedy
+                                </p>
+                                <p class="information__job">
+                                    Founder of Producthunt
+                                </p>
+                                <p class="information__said">
+                                    "We just want to say thank you to Floko and
+                                    to their highly professional staff! They
+                                    have supported us throughout all the event.
+                                    Everything was well organized! The event's
+                                    turned to be a great success! You deserve
+                                    the highest grade!"
+                                </p>
+                                <div class="information__dots">
+                                    <label
+                                        for="information-checkbox"
+                                        class="information__dot information__dot--active"
+                                    ></label>
+                                    <label
+                                        for="information-checkbox"
+                                        class="information__dot"
+                                    ></label>
+                                    <label
+                                        for="information-checkbox"
+                                        class="information__dot"
+                                    ></label>
+                                </div>
+                            </div>
+                            <!-- Information-item-2 -->
+                            <div
+                                class="col col-xl-4 offset-xl-1 .information__col--padding"
+                            >
+                                <figure class="information__img-wrap">
+                                    <img
+                                        src="./assets/img/information-img-2.png"
+                                        alt=""
+                                        class="information__img information__img-2"
+                                    />
+                                </figure>
+                            </div>
+                            <div class="col col-xl-4">
+                                <p class="information__name">
+                                    Jonathan Kennedy
+                                </p>
+                                <p class="information__job">
+                                    Founder of Producthunt
+                                </p>
+                                <p class="information__said">
+                                    "We just want to say thank you to Floko and
+                                    to their highly professional staff! They
+                                    have supported us throughout all the event.
+                                    Everything was well organized! The event's
+                                    turned to be a great success! You deserve
+                                    the highest grade!"
+                                </p>
+                                <div class="information__dots">
+                                    <label
+                                        for="information-checkbox"
+                                        class="information__dot information__dot--active"
+                                    ></label>
+                                    <label
+                                        for="information-checkbox"
+                                        class="information__dot"
+                                    ></label>
+                                    <label
+                                        for="information-checkbox"
+                                        class="information__dot"
+                                    ></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="information-checkbox"></label>
+                </div>
+            </section>
+        </main>
+        <!-- --------------------------------------------------Footer------------------------------------------------------ -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <img src="./assets/icon/Logo.svg" alt="" />
+                        </div>
+                        <div class="col-xl-2 offset-xl-2 col-md-6">
+                            <p class="footer__title">Navigate</p>
+                            <div class="footer__list">
+                                <a href="#!" class="footer__link">Home</a>
+                                <a href="#!" class="footer__link">Saeakers</a>
+                                <a href="#!" class="footer__link">About</a>
+                                <a href="#!" class="footer__link"
+                                    >HELL YES! Moments</a
+                                >
+                                <a href="#!" class="footer__link">Contact</a>
+                                <a href="#!" class="footer__link">Legal</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-6">
+                            <p class="footer__title">Speakers</p>
+                            <div class="footer__list">
+                                <a href="#!" class="footer__link"
+                                    >Ananya Caro</a
+                                >
+                                <a href="#!" class="footer__link"
+                                    >Christa Couture</a
+                                >
+                                <a href="#!" class="footer__link"
+                                    >Duke Jelani</a
+                                >
+                                <a href="#!" class="footer__link"
+                                    >Dr. Arwin Adam</a
+                                >
+                                <a href="#!" class="footer__link"
+                                    >aawrence Julie</a
+                                >
+                                <a href="#!" class="footer__link"
+                                    >Anderson Adom</a
+                                >
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12">
+                            <p class="footer__title">Newsletter</p>
+                            <div class="footer__list">
+                                <p
+                                    class="footer__link footer__link--line-height"
+                                >
+                                    Sign up to be first to receive the latest
+                                    stories inspiring us, case studies, and
+                                    industry news.
+                                </p>
+                                <form action="" method="post">
+                                    <input
+                                        placeholder="Your name"
+                                        type="text"
+                                        name=""
+                                        id=""
+                                        class="footer__input footer__input-name footer__input--padding"
+                                    />
+                                    <input
+                                        placeholder="Email address"
+                                        type="email"
+                                        name=""
+                                        id=""
+                                        class="footer__input footer__input-email"
+                                    />
+                                    <button
+                                        type="submit"
+                                        class="btn footer__btn"
+                                    >
+                                        SUBSCRIBE
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row--footer-padding">
+                        <div class="col col-xl-2">
+                            <p class="footer__created">
+                                © Created by uihut.com
+                            </p>
+                        </div>
+                        <div class="col col-xl-4 offset-xl-6">
+                            <div class="footer__logo-wrap">
+                                <div class="footer__logo-item">
+                                    <img
+                                        src="./assets/icon/logo_twitter.svg"
+                                        alt=""
+                                        class="footer__img"
+                                    />
+                                    <a
+                                        href="#!"
+                                        class="footer__logo-name footer__logo-name--white"
+                                        >Twitter</a
+                                    >
+                                </div>
+
+                                <div class="footer__logo-item">
+                                    <img
+                                        src="./assets/icon/logo_link.svg"
+                                        alt=""
+                                        class="footer__img"
+                                    />
+                                    <a href="#!" class="footer__logo-name"
+                                        >Linkedin</a
+                                    >
+                                </div>
+
+                                <div class="footer__logo-item">
+                                    <img
+                                        src="./assets/icon/logo_insta.svg"
+                                        alt=""
+                                        class="footer__img"
+                                    />
+                                    <a href="#!" class="footer__logo-name"
+                                        >Instagram</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
